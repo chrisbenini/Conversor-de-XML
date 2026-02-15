@@ -7,7 +7,7 @@
 [![C#](https://img.shields.io/badge/C%23-.NET%208-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](#)
 [![Avalonia](https://img.shields.io/badge/Avalonia-UI-ff4f9a?style=for-the-badge)](#)
 
-> Aplicação desktop para **converter .XML e XML embutido em PDF/TXT** em planilhas **Excel (.xlsx)** com poucos cliques.
+> Aplicação desktop para **converter XML (.XML)** em planilhas **Excel (.xlsx)** em poucos cliques.
 
 ---
 
@@ -54,8 +54,6 @@ Extrai o XML completo e organiza no Excel (bom para auditoria/consulta rápida).
 
 ### Power Query (seleção de linhas)
 ![Power Query](docs/screenshots/Power_query.png)
-
-> Se os nomes das imagens estiverem diferentes, ajuste os caminhos acima para bater com os arquivos do seu repo.
 
 ---
 
