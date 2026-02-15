@@ -16,7 +16,7 @@
 👉 Baixe o instalador na página de releases:  
 **https://github.com/chrisbenini/Conversor-de-XML/releases/latest**
 
-Arquivo: `ConversorXML_Setup_v1.0.exe` *(ou o mais recente disponível na release)*
+Arquivo: `ConversorXML_Setup_v1.0.exe`
 
 ---
 
