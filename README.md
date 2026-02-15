@@ -7,7 +7,7 @@
 [![C#](https://img.shields.io/badge/C%23-.NET%208-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](#)
 [![Avalonia](https://img.shields.io/badge/Avalonia-UI-ff4f9a?style=for-the-badge)](#)
 
-> Aplicação desktop para **converter XML (e XML embutido em PDF/TXT)** em planilhas **Excel (.xlsx)** com poucos cliques.
+> Aplicação desktop para **converter .XML e XML embutido em PDF/TXT** em planilhas **Excel (.xlsx)** com poucos cliques.
 
 ---
 
