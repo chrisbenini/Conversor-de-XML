@@ -1,0 +1,13 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ConversorNFe.App.App"
+             RequestedThemeVariant="Default">
+             
+    <!-- Tema do app:
+         Default = segue o tema do Windows (claro/escuro) -->
+
+    <Application.Styles>
+        <!-- Aplica o tema Fluent (visual moderno do Windows) -->
+        <FluentTheme />
+    </Application.Styles>
+</Application>

@@ -1,0 +1,240 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="ConversorNFe.App.AvisoArquivosWindow"
+        Width="980" Height="560"
+        MinWidth="820" MinHeight="460"
+        WindowStartupLocation="CenterOwner"
+        CanResize="True"
+        Title="⚠️ Aviso"
+        Icon="avares://ConversorNFe.App/recursos/icone/app.ico">
+
+  <!-- tema escuro -->
+  <Window.Styles>
+
+    <!-- fundo app -->
+    <Style Selector="Window">
+      <Setter Property="Background" Value="#070F1D"/>
+    </Style>
+
+    <!-- cor texto -->
+    <Style Selector="TextBlock">
+      <Setter Property="Foreground" Value="#E6F0FF"/>
+    </Style>
+
+    <!-- texto secundário -->
+    <Style Selector="TextBlock.sub">
+      <Setter Property="Foreground" Value="#B7C7E6"/>
+      <Setter Property="Opacity" Value="0.95"/>
+    </Style>
+
+    <!-- texto dica -->
+    <Style Selector="TextBlock.hint">
+      <Setter Property="Foreground" Value="#95A8CC"/>
+      <Setter Property="Opacity" Value="0.85"/>
+    </Style>
+
+    <!-- card lista -->
+    <Style Selector="Border.card">
+      <Setter Property="Background" Value="#0B162B"/>
+      <Setter Property="BorderBrush" Value="#1C2B4A"/>
+      <Setter Property="BorderThickness" Value="1"/>
+      <Setter Property="CornerRadius" Value="14"/>
+    </Style>
+
+    <!-- linha meio -->
+    <Style Selector="Border.divider">
+      <Setter Property="Background" Value="#1C2B4A"/>
+      <Setter Property="Opacity" Value="0.8"/>
+    </Style>
+
+    <!-- list transparente -->
+    <Style Selector="ListBox">
+      <Setter Property="Background" Value="Transparent"/>
+    </Style>
+
+    <!-- botão base -->
+    <Style Selector="Button">
+      <Setter Property="CornerRadius" Value="10"/>
+      <Setter Property="FontWeight" Value="SemiBold"/>
+      <Setter Property="Padding" Value="18,10"/>
+    </Style>
+
+    <!-- botão verde -->
+    <Style Selector="Button.primary">
+      <Setter Property="Background" Value="#19A65A"/>
+      <Setter Property="Foreground" Value="#FFFFFF"/>
+    </Style>
+
+    <!-- botão cinza -->
+    <Style Selector="Button.secondary">
+      <Setter Property="Background" Value="#2A3A55"/>
+      <Setter Property="Foreground" Value="#E6F0FF"/>
+    </Style>
+  </Window.Styles>
+
+  <!-- layout geral -->
+  <Grid Margin="22"
+        RowDefinitions="Auto,Auto,*,Auto">
+
+    <!-- título topo -->
+    <TextBlock Grid.Row="0"
+               Text="{Binding Titulo}"
+               FontSize="26"
+               FontWeight="Bold"
+               Margin="0,0,0,8"/>
+
+    <!-- subtítulo topo -->
+    <TextBlock Grid.Row="1"
+               Classes="sub"
+               Text="{Binding Subtitulo}"
+               FontSize="14"
+               Margin="0,0,0,16"/>
+
+    <!-- área listas -->
+    <Grid Grid.Row="2"
+          ColumnDefinitions="*,16,Auto,16,*"
+          RowDefinitions="Auto,10,*">
+
+      <!-- label inválidos -->
+      <TextBlock Grid.Row="0" Grid.Column="0"
+                 Text="Arquivos que não puderam ser usados:"
+                 FontWeight="SemiBold"/>
+
+      <!-- label válidos -->
+      <TextBlock Grid.Row="0" Grid.Column="4"
+                 Text="Arquivos que serão gerados:"
+                 FontWeight="SemiBold"/>
+
+      <!-- card inválidos -->
+      <Border Grid.Row="2" Grid.Column="0"
+              Classes="card"
+              Padding="12">
+
+        <!-- lista inválidos -->
+        <ListBox ItemsSource="{Binding Invalidos}"
+                 ScrollViewer.VerticalScrollBarVisibility="Auto"
+                 ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                 Padding="0,0,14,0">
+
+          <!-- template item -->
+          <ListBox.ItemTemplate>
+  <DataTemplate>
+    <!-- 2 colunas: bullet + texto -->
+    <Grid HorizontalAlignment="Stretch"
+          MinWidth="1200"
+          ColumnDefinitions="Auto,*"
+          Margin="0,0,0,10">
+
+      <TextBlock Grid.Column="0"
+                 Text="•"
+                 Margin="0,0,10,0"
+                 VerticalAlignment="Center"/>
+
+      <!-- arquivo + motivo na mesma linha -->
+      <TextBlock Grid.Column="1"
+                 TextWrapping="NoWrap"
+                 VerticalAlignment="Center"
+                 ToolTip.Tip="{Binding Arquivo}">
+
+        <Run Text="{Binding Arquivo}" />
+        <Run Text=": " />
+        <Run Text="{Binding Motivo}" />
+      </TextBlock>
+
+    </Grid>
+  </DataTemplate>
+</ListBox.ItemTemplate>
+
+        </ListBox>
+      </Border>
+
+      <!-- divisor meio -->
+      <Border Grid.Row="0" Grid.RowSpan="3" Grid.Column="2"
+              Classes="divider"
+              Width="1"/>
+
+      <!-- card válidos -->
+      <Border Grid.Row="2" Grid.Column="4"
+              Classes="card"
+              Padding="12">
+
+        <!-- lista válidos -->
+        <ListBox ItemsSource="{Binding Validos}"
+                 ScrollViewer.VerticalScrollBarVisibility="Auto"
+                 ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                 Padding="0,0,14,0">
+
+          <!-- template item -->
+          <ListBox.ItemTemplate>
+            <DataTemplate>
+
+              <!-- linha 2 colunas -->
+              <Grid HorizontalAlignment="Stretch"
+                    MinWidth="900"
+                    ColumnDefinitions="Auto,*"
+                    Margin="0,0,0,10">
+
+                <!-- bullet -->
+                <TextBlock Grid.Column="0"
+                           Text="•"
+                           Margin="0,0,10,0"
+                           VerticalAlignment="Center"/>
+
+                <!-- nome arquivo -->
+                <TextBlock Grid.Column="1"
+                           Text="{Binding}"
+                           TextWrapping="NoWrap"
+                           ToolTip.Tip="{Binding}"
+                           VerticalAlignment="Center"/>
+              </Grid>
+            </DataTemplate>
+          </ListBox.ItemTemplate>
+
+        </ListBox>
+      </Border>
+
+    </Grid>
+
+    <!-- rodapé botões -->
+    <Grid Grid.Row="3"
+          ColumnDefinitions="*,Auto,Auto"
+          Margin="0,16,0,0">
+
+      <!-- texto dica 
+      <TextBlock Grid.Column="0"
+                 Classes="hint"
+                 Text="Dica: você pode rolar horizontalmente para ver nomes longos."
+                 VerticalAlignment="Center"/> -->
+
+      <!-- continuar -->
+      <Button Grid.Column="1"
+              x:Name="BtnContinuar"
+              Classes="primary"
+              Content="Continuar"
+              Width="160"
+              HorizontalAlignment="Right"
+              Margin="0,0,12,0"
+              Click="Continuar_Click"/>
+
+      <!-- cancelar -->
+      <Button Grid.Column="2"
+              x:Name="BtnCancelar"
+              Classes="secondary"
+              Content="Cancelar"
+              Width="160"
+              HorizontalAlignment="Right"
+              Click="Cancelar_Click"/>
+
+      <!-- ok (modo alerta) -->
+      <Button Grid.Column="2"
+              x:Name="BtnOk"
+              Classes="secondary"
+              Content="OK"
+              Width="160"
+              HorizontalAlignment="Right"
+              Click="Ok_Click"/>
+
+    </Grid>
+
+  </Grid>
+</Window>
