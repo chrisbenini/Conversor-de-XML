@@ -1,4 +1,3 @@
-```md
 <p align="center">
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:020617,18:0f172a,42:1e3a8a,72:0891b2,100:14b8a6&text=Oficina%20SQL%20Database&fontSize=38&fontColor=f8fafc&fontAlignY=38&desc=Relational%20Modeling%20%7C%20MySQL%20%7C%20Academic%20Project&descAlignY=60&descSize=18&descColor=e0f2fe&animation=twinkling" />
 </p>
@@ -109,4 +108,3 @@ SOURCE Sql/04_queries.sql;
     <img src="https://img.shields.io/badge/GitHub-chrisbenini-0F172A?style=for-the-badge&logo=github&logoColor=white">
   </a>
 </p>
-```
