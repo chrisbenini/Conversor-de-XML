@@ -1,9 +1,9 @@
 <p align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=260&color=0:0b0f1a,35:131c31,70:1f3a5f,100:2563eb&text=Conversor%20de%20XML%20para%20Excel&fontSize=34&fontColor=f8fafc&fontAlignY=38&desc=NF-e%20%7C%20Power%20Query%20%7C%20XML%20Bruto%20%7C%20Desktop%20App&descAlignY=60&descSize=18&descColor=dbeafe&animation=fadeIn" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=260&color=0:06121f,25:0f2a3f,55:0f766e,80:0ea5e9,100:22c55e&text=Conversor%20de%20XML%20para%20Excel&fontSize=34&fontColor=f8fafc&fontAlignY=38&desc=NF-e%20%7C%20Power%20Query%20%7C%20XML%20Bruto%20%7C%20Desktop%20App&descAlignY=60&descSize=18&descColor=d1fae5&animation=fadeIn" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=60A5FA&center=true&vCenter=true&width=1100&lines=Desktop+application+for+XML+to+Excel+conversion;NF-e+processing+with+ST%2FIPI+calculation;Power+Query+mode+for+selective+tag+extraction;Built+with+C%23%2C+.NET+8%2C+Avalonia+UI+and+ClosedXML" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=34D399&center=true&vCenter=true&width=1100&lines=Desktop+application+for+XML+to+Excel+conversion;NF-e+processing+with+ST%2FIPI+calculation;Power+Query+mode+for+selective+tag+extraction;Built+with+C%23%2C+.NET+8%2C+Avalonia+UI+and+ClosedXML" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -12,24 +12,24 @@
 
 <p align="center">
   <a href="https://github.com/chrisbenini/Conversor-de-XML/releases/latest">
-    <img src="https://img.shields.io/github/v/release/chrisbenini/Conversor-de-XML?style=for-the-badge&logo=github&logoColor=white" alt="Release">
+    <img src="https://img.shields.io/github/v/release/chrisbenini/Conversor-de-XML?style=for-the-badge&logo=github&logoColor=white&labelColor=0f172a&color=0ea5e9" alt="Release">
   </a>
   <a href="https://github.com/chrisbenini/Conversor-de-XML/releases/latest">
-    <img src="https://img.shields.io/github/downloads/chrisbenini/Conversor-de-XML/total?style=for-the-badge&logo=github&logoColor=white" alt="Downloads">
+    <img src="https://img.shields.io/github/downloads/chrisbenini/Conversor-de-XML/total?style=for-the-badge&logo=github&logoColor=white&labelColor=0f172a&color=14b8a6" alt="Downloads">
   </a>
   <a href="https://github.com/chrisbenini/Conversor-de-XML/stargazers">
-    <img src="https://img.shields.io/github/stars/chrisbenini/Conversor-de-XML?style=for-the-badge&logo=github&logoColor=white" alt="Stars">
+    <img src="https://img.shields.io/github/stars/chrisbenini/Conversor-de-XML?style=for-the-badge&logo=github&logoColor=white&labelColor=0f172a&color=22c55e" alt="Stars">
   </a>
   <a href="LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-0f172a?style=for-the-badge" alt="MIT">
+    <img src="https://img.shields.io/badge/License-MIT-0f172a?style=for-the-badge&logoColor=white" alt="MIT">
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/C%23-.NET_8-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="C# .NET 8">
-  <img src="https://img.shields.io/badge/Avalonia-UI-ff4f9a?style=for-the-badge" alt="Avalonia UI">
-  <img src="https://img.shields.io/badge/ClosedXML-Excel_Generation-16a34a?style=for-the-badge" alt="ClosedXML">
-  <img src="https://img.shields.io/badge/iText7-PDF_Extraction-ef4444?style=for-the-badge" alt="iText7">
+  <img src="https://img.shields.io/badge/C%23-.NET_8-0ea5e9?style=for-the-badge&logo=dotnet&logoColor=white" alt="C# .NET 8">
+  <img src="https://img.shields.io/badge/Avalonia-UI-14b8a6?style=for-the-badge" alt="Avalonia UI">
+  <img src="https://img.shields.io/badge/ClosedXML-Excel_Generation-22c55e?style=for-the-badge" alt="ClosedXML">
+  <img src="https://img.shields.io/badge/iText7-PDF_Extraction-0f766e?style=for-the-badge" alt="iText7">
 </p>
 
 ---
@@ -53,7 +53,6 @@ Além da conversão simples, o projeto oferece modos específicos para cenários
 ## `> download`
 
 ### Windows
-
 
 Baixe o instalador na página de releases:
 
@@ -90,7 +89,6 @@ Modo voltado para leitura de documentos fiscais, com extração de itens, impost
 
 Permite escolher exatamente quais linhas, blocos ou tags do XML serão exportados.
 
-
 Exemplos:
 - `<det>`
 - `<emit>`
@@ -108,7 +106,6 @@ Extrai o conteúdo completo do XML e organiza as informações no Excel, sendo �
 
 ### Fluxo básico de uso
 
-
 1. Abrir o aplicativo
 2. Selecionar arquivos XML, PDF ou TXT
 3. Escolher o modo de exportação
@@ -116,7 +113,6 @@ Extrai o conteúdo completo do XML e organiza as informações no Excel, sendo �
 5. Validar o resultado e consultar os arquivos processados
 
 > Arquivos PDF e TXT precisam conter XML embutido quando esse tipo de leitura for suportado.
-
 
 ---
 
@@ -129,9 +125,6 @@ Extrai o conteúdo completo do XML e organiza as informações no Excel, sendo �
 </p>
 
 ### Janela de validação e aviso
-
-
-
 
 <p align="center">
   <img src="docs/screenshots/Aviso_calculo.png" width="900" alt="Janela de aviso">
@@ -148,11 +141,11 @@ Extrai o conteúdo completo do XML e organiza as informações no Excel, sendo �
 ## `> technical_stack`
 
 <p align="center">
-  <img src="https://img.shields.io/badge/C%23-68217A?style=for-the-badge&logo=csharp&logoColor=white" alt="C#">
-  <img src="https://img.shields.io/badge/.NET_8-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET 8">
-  <img src="https://img.shields.io/badge/Avalonia_UI-ff4f9a?style=for-the-badge" alt="Avalonia UI">
-  <img src="https://img.shields.io/badge/ClosedXML-16a34a?style=for-the-badge" alt="ClosedXML">
-  <img src="https://img.shields.io/badge/iText7-ef4444?style=for-the-badge" alt="iText7">
+  <img src="https://img.shields.io/badge/C%23-0ea5e9?style=for-the-badge&logo=csharp&logoColor=white" alt="C#">
+  <img src="https://img.shields.io/badge/.NET_8-14b8a6?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET 8">
+  <img src="https://img.shields.io/badge/Avalonia_UI-22c55e?style=for-the-badge" alt="Avalonia UI">
+  <img src="https://img.shields.io/badge/ClosedXML-0f766e?style=for-the-badge" alt="ClosedXML">
+  <img src="https://img.shields.io/badge/iText7-0891b2?style=for-the-badge" alt="iText7">
 </p>
 
 ### Tecnologias utilizadas
