@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=180&section=header&color=0:021024,30:0f2a3f,65:0f766e,100:22c55e&text=Conversor%20de%20XML%20para%20Excel&fontSize=30&fontColor=f8fafc&fontAlignY=38&desc=NF-e%20%7C%20Power%20Query%20%7C%20XML%20Bruto%20%7C%20Desktop%20App&descAlignY=63&descSize=16&descColor=d1fae5&animation=fadeIn" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:03121f,25:0f2a3f,55:0f766e,80:0ea5e9,100:22c55e&text=Conversor%20de%20XML%20para%20Excel&fontSize=40&fontColor=f8fafc&fontAlignY=37&desc=NF-e%20%7C%20Power%20Query%20%7C%20XML%20Bruto%20%7C%20Desktop%20App&descAlignY=58&descSize=18&descColor=d1fae5&animation=twinkling" />
 </p>
 
 <p align="center">
